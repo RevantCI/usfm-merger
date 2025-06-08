@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import './App.css'
+import MergeDialog from './MergeDialog.jsx'
+
 
 function App() {
   const [usfm1, setUsfm1] = useState('');
@@ -16,9 +18,7 @@ function App() {
           <img src="/usfmerger.svg" alt="USFM Merger Logo" className="w-6 h-6 mr-2" />
           USFM Merger
         </h1>
-        <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
-          Merge
-        </button>
+         <MergeDialog ></MergeDialog>
       </div>
       <div className="flex-1 p-4">
         <div className="grid grid-cols-2 grid-rows-2 gap-4 h-full">
@@ -56,7 +56,7 @@ function App() {
               </div>
             </div>
             <div className="mt-2 flex-1"> 
-              <textarea className="w-full h-full p-2 border border-gray-300 rounded resize-none" placeholder="Upload USFM 1 file" value={usfm1} style={{ height: '100%' }}></textarea>
+              <textarea className="w-full h-full p-2 border border-gray-300 rounded resize-none" placeholder="Upload USFM 1 file" value={usfm1} style={{ height: '100%' }} readOnly></textarea>
             </div>
           </div>
           <div className="p-4 h-full flex flex-col">
@@ -93,7 +93,7 @@ function App() {
               </div>
             </div>
             <div className="mt-2 flex-1"> 
-              <textarea className="w-full h-full p-2 border border-gray-300 rounded resize-none" placeholder="Upload USFM 2 file" value={usfm2} style={{ height: '100%' }}></textarea>
+              <textarea className="w-full h-full p-2 border border-gray-300 rounded resize-none" placeholder="Upload USFM 2 file" value={usfm2} style={{ height: '100%' }} readOnly></textarea>
             </div>
           </div>
           <div className="p-4 h-full flex flex-col">
@@ -130,7 +130,7 @@ function App() {
               </div>
             </div>
             <div className="mt-2 flex-1"> 
-              <textarea className="w-full h-full p-2 border border-gray-300 rounded resize-none" placeholder="Upload USFM 3 file" value={usfm3} style={{ height: '100%' }}></textarea>
+              <textarea className="w-full h-full p-2 border border-gray-300 rounded resize-none" placeholder="Upload USFM 3 file" value={usfm3} style={{ height: '100%' }} readOnly></textarea>
             </div>
           </div>
           <div className="p-4 h-full flex flex-col">
@@ -167,7 +167,7 @@ function App() {
               </div>
             </div>
             <div className="mt-2 flex-1"> 
-              <textarea className="w-full h-full p-2 border border-gray-300 rounded resize-none" placeholder="Upload USFM 4 file" value={usfm4} style={{ height: '100%' }}></textarea>
+              <textarea className="w-full h-full p-2 border border-gray-300 rounded resize-none" placeholder="Upload USFM 4 file" value={usfm4} style={{ height: '100%' }} readOnly></textarea>
             </div>
           </div>
           
