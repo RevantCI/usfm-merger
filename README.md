@@ -1,15 +1,17 @@
-# usfm-merger
+# USFM Merger
 USFM Merger made with React JS for merging USFM fragments of a book
 
-# React + Vite
+## Prerequisites
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- Node.js (https://nodejs.org/en/download/)
+- npm (comes bundled with Node.js)
 
-Currently, two official plugins are available:
+## Install
+- Clone this repository by running `git clone https://github.com/revant/usfm-merger.git`
+- Change into the project directory by running `cd usfm-merger`
+- Install dependencies for this project by running `npm install` in the project directory.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Run the project
 
-## Expanding the ESLint configuration
+- Run the project by running `npm run dev` in the project directory.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
