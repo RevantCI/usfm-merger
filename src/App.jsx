@@ -12,7 +12,10 @@ function App() {
   return (
     <div className="flex flex-col h-screen">
       <div className="bg-gray-800 p-4 flex justify-between">
-        <h1 className="text-2xl text-white">USFM Merger</h1>
+        <h1 className="text-2xl text-white flex items-center">
+          <img src="/usfmerger.svg" alt="USFM Merger Logo" className="w-6 h-6 mr-2" />
+          USFM Merger
+        </h1>
         <button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">
           Merge
         </button>
